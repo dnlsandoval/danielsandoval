@@ -1,287 +1,171 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
-	<title>Daniel Sandoval's Resume</title>
-	
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Resume for Daniel Sandoval">
-	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-	<link rel="shortcut icon" href="favicon.ico"> 
-	
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-	
-	<!-- FontAwesome JS-->
-	<script defer src="assets/fontawesome/js/all.min.js"></script>
-	
-	<!-- Theme CSS -->  
-	<link id="theme-style" rel="stylesheet" href="assets/css/devresume.css">
-
-</head> 
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Sandoval - Resume</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Accessible Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600&display=swap" rel="stylesheet">
+</head>
 <body>
-	
-	<div class="main-wrapper">
-		<div class="container px-3 px-lg-5">
-			<article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
-				
-				<div class="resume-header">
-					<div class="row align-items-center">
-						<div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
-							<h2 class="resume-name mb-0 text-uppercase">Daniel Sandoval</h2>
-							<div class="resume-tagline mb-3 mb-md-0">Software Engineering Manager</div>
-						</div><!--//resume-title-->
-						<div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
-							<ul class="list-unstyled mb-0">
-								<li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg me-2"></i><a class="resume-link" href="tel:#">+52 3314105486</a></li>
-								<li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg me-2"></i><a class="resume-link" href="mailto:#">jdsandoval@gmail.com</a></li>
-								<li class="mb-2"><i class="fa-brands fa-github-square fa-fw fa-lg me-2"></i><a class="resume-link" href="https://github.com/dnlsandoval" target="_blank" rel="noopener noreferrer">dnlsandoval</a></li>
-								<li class="mb-2"><i class="fa-brands fa-linkedin fa-fw fa-lg me-2"></i><a class="resume-link" href="https://www.linkedin.com/in/dnlsandoval/" target="_blank" rel="noopener noreferrer">dnlsandoval</a></li>
-								<li class="mb-2"><i class="fas fa-file-pdf fa-fw fa-lg me-2"></i><a href="assets/DanielSandoval_Resume.pdf" download>CV/Resume</a></li>								
-								<li class="mb-0"><i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Guadalajara, México</li>
-							</ul>
-						</div><!--//resume-contact-->
-					</div><!--//row-->
-					
-				</div><!--//resume-header-->
-				<hr>
-				<div class="resume-intro py-3">
-					<div class="row align-items-center">
-						<div class="col-12 col-md-3 col-xl-2 text-center">
-						    <img class="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded mx-auto" src="assets/images/daniel-sandoval.png" alt="image">
-						</div>
-						
-						<div class="col text-start">
-							<p class="mb-0">Professional with experience on SW Dev, QA, DevOps, User Support and Project Management. I started as a SW Engineer for ERP systems and OS components. I became interested in Project Management and moved into leading teams and projects. Obtained PMP and Scrum Product Owner certifications, developed experience on facing Users and Customers and managing feature requests. Now performing as SW Engineering manager but still in touch with technology and solutions, providing coaching, business context and System] Design directions to Jr and Sr engineers from different backgrounds and cultures, along with User and Project management. I am currently looking for a challenging position in an innovative organization where I can use my technical and analytical skills to change the world one step at a time.</p>
-						</div><!--//col-->
-					</div>
-				</div><!--//resume-intro-->
-				<hr>
-				<div class="resume-body">
-					<div class="row">
-						<div class="resume-main col-12 col-lg-8 col-xl-9   pe-0   pe-lg-5">
-							<section class="project-section py-3">
-								<h3 class="text-uppercase resume-section-heading mb-4">Expertise and skills</h3>
-								<div class="item mb-3">
-<!-- 									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Project Lorem Ipsum</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">Open Source</div>
-										
-									</div> -->
-									<div class="item-content">
-										<p>Project Management Professional (PMP 1993982, 2015), Professional Scrum Product Owner (PSPO I, 2021), SW Engineering, System Design, QA Management., DevOps Management, Planning, Excellent communicator, Problem solving, Requirements management, User and Customer management, Improvement and Innovation, HW Provisioning and management, Linux(Debian), WSL, Programming: C#, C/C++, Python, Bash, Databases, MongoDB, Neo4J, MS SQL, JIRA, GitHub Actions, Jenkins, Proxmox, XML, GIT, TeamCity, Visio, Azure DevOps, PowerBI, ECK, JavaScript, Automation, Data analysis, Ansible, Docker.</p>
-										
-									</div>
-								</div><!--//item-->
+  <!-- Dark Mode Toggle (top right) -->
+  <div class="switch-container">
+    <label class="switch" aria-label="Toggle dark mode">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider"></span>
+      <!-- SVG Moon Icon for Dark Mode -->
+      <span class="switch-label" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+          <path d="M15.5 13.5A7 7 0 0 1 6.5 4.5a.75.75 0 0 0-.82-1A8.5 8.5 0 1 0 16.5 15.32a.75.75 0 0 0-1-.82z" fill="currentColor"/>
+        </svg>
+      </span>
+    </label>
+  </div>
 
-							</section><!--//project-section-->	
-							<section class="work-section py-3">
-								<h3 class="text-uppercase resume-section-heading mb-4">Work Experiences</h3>
-								<div class="item mb-3">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Software Engineering Mananger</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">Intel – 2021 - Present</div>
-										
-									</div>
-									<div class="item-content">
-										<p>Managing multi-geo team located in US, MX and Israel with a variety of functions: SW Development, DevOps/QA and User Support.&nbsp;</p>
-										<p><strong>DevOps:</strong></p>
-										<ul>
-										<li>Implemented DevOps/QA practices for a larger SW Dev organization by recruiting a team to implement a GitHub Actions CI flow against the deliverables of the SW org. Collected requests and use cases from Developers and Customers to define a JIRA backlog and roadmap for DevOps/QA work.</li>
-										<li>Coached team to:
-										<ul>
-										<li>Implement CI environment with GitHub Actions that puts quality checks to new code for a custom Debian distro, using a mix of virtual and physical on-premises GitHub Runners. Increasing the quality and reducing number of escapes to Users, including VM-based Python middleware for data processing and ECK-Dashboards for visualization.</li>
-										<li>Implement and deploy test framework based on Python&rsquo;s <em>unittest</em> library with custom wrappers specific to silicon validation, providing a standard reference to development teams to implement tests sets automatically consumable by CI flow, consolidating heterogenous testing practices for the organization.</li>
-										<li>Deploy Ansible for HW control and monitoring with Grafana dashboards and email notifications,</li>
-										<li>Deploy Docker/Kubernetes/Rancher to support internal infrastructure like internal DokuWiki, ECK-based dashboards and miscellaneous middleware, saving 4K hours/years for developers reviewing multiple repositories in a single location.</li>
-										<li>Implementing AI-based tooling to enhance documentation and code review process for development teams, to save 8K hours/year for the organization.</li>
-										</ul>
-										</li>
-										</ul>
-										<p><strong>User Support:</strong></p>
-										<ul>
-										<li>Implemented a User Support team to improve communication and service provided to global internal Users of a custom Debian distro. Collected requests and use cases from Users to define a JIRA backlog and roadmap for User Support work.</li>
-										<li>Established a mode of work for the team by defining processes, SLA and indicators.</li>
-										<li>Coached the team to publish a dashboard using PowerBI to keep Users and Mgmt. informed.</li>
-										<li>Coached the team to become champions of a continuous improvement/retrospective process implemented at organization level with the goal to reduce the number of software bug escapes to Users.</li>
-										</ul>
-										<p><strong>SW Development:</strong></p>
-										<ul>
-										<li>Managed a team of 5 US Developers trainees for a 6-month assignment, team members ranging from Senior to Recently Graduated.</li>
-										<li>Coached team to deliver C/C++ Driver and Applications for a custom Debian-based Operating System used for the validation of next-generation Silicon products.</li>
-										</ul>
-										<p><strong>Processes implementation and other related activities:</strong></p>
-										<ul>
-										<li>Formed and managed an organization-level task force for a <em>GitLab to GitHub</em> migration of about 200 repositories.</li>
-										<li>Define mode of work for teams: Implemented Scrum for DevOps, Kanban for User support, definition of quarterly OKRs at personal and team level, <em>Personal Development Plans</em> for team members, User SLA, roadmaps and delivery plans.</li>
-										<li>To accelerate SW Development practices, negotiated fundings and provisioning of a server farm to enable virtualization infrastructure for organization-level teams. Created forecasts, procurement plans, comparative analysis and proposals and secured the funding of such infrastructure that is under deployment now.</li>
-										<li>Work with IT to enable tooling and environment for my teams, e.g.: MongoDB, ECK, JIRA deployment for DevOps and User Support teams.</li>
-										<li>Provide advice to upper management on SW Development, decision making, conflict resolution processes and technology roadmaps.</li>
-										</ul>
-										<p><strong>Extra-curricular activities:</strong></p>
-										<ul>
-										<li>Leading a Site-wide Software strategy to develop and strengthen the SW development practices with BKMs, standardization and training.</li>
-										<li>Formed a volunteer team of experienced SW engineers to execute the strategy and provide coaching to local teams.</li>
-										</ul>
-									</div>
-								</div><!--//item-->
-								<div class="item mb-3">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Product Owner</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">Intel – 2017 - 2021</div>										
-									</div>
-									<div class="item-content">
-										<p>Lead a multidisciplinary scrum team (Development, QA, User support)</p>
-										<ul>
-										<li>Managed the development and delivery of a portfolio of web apps (developed with JS, SharePoint, MongoDB, SQL and others) used in areas such as Finance, Service Desk and Learning, having global internal Users across multiple Business units and multiple Stakeholders. Service desk and Learning applications with a user base of about 10K Users distributed globally. Finance web application with a user base of about 1K Users distributed globally, used to manage budget at business unit level.</li>
-										<li>Define communications strategy, multi-year planning and roadmaps, high level design, UC collection, Service Level Agreements, KPIs for dev team</li>
-										<li>Drove closure/end-of-life of in-house projects and resource disposition due Org strategies shift.</li>
-										</ul>									
-									</div>
-								</div><!--//item-->
-								<div class="item mb-3">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Product Owner</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">Intel – 2015 - 2017</div>										
-									</div>
-									<div class="item-content">
-										<ul>
-										<li>Defined and applied a Product Life Cycle for an Eclipse-plugin app used in the verification of next-gen Silicon products.</li>
-										<li>Managed the backlog and delivery of software features and Scrum process for a multi-geo Dev team</li>
-										<li>Stakeholder management, training, document new requirements, write technical specifications.</li>
-										</ul>
-									</div>
-								</div><!--//item-->
-								<div class="item">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Software Engineer</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">Intel – 2011 - 2015</div>										
-									</div>
-									<div class="item-content">
-										<ul>
-										<li>Implemented features for an Eclipse-plugin app used in the verification of next-gen Silicon products.</li>
-										<li>Managed a backlog within tight schedules, facing global Users and providing support through in-house service desk system.</li>
-										</ul>
-									</div>
-								</div><!--//item-->
-								<div class="item">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Software Engineer</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">IBM – 2007 - 2011</div>
-										
-									</div>
-									<div class="item-content">
-										<ul>
-										<li>Development and User support of legacy communication modules of AS/400 systems, SW Dev and Support of Mainframe network protocols written in C, Issue handling and resolution for Fortune 500 Customers</li>
-										<li>SW Dev of Purchasing Desktop App, SW Dev and Support of Desktop App written in C++, Coding of designs in a mix of Visual C++/C#/XML environment and MVC architecture.</li>
-										</ul>
-									</div>
-								</div><!--//item-->
+  <main class="resume" tabindex="0">
+    <!-- Header Section -->
+    <header class="resume-header">
+      <div class="profile-img" aria-hidden="true">
+        <img src="assets/images/daniel-sandoval.png" alt="Daniel Sandoval profile photo" width="80" height="80">
+      </div>
+      <div>
+        <h1>Daniel Sandoval</h1>
+        <!-- <p class="resume-title">Software Engineering Manager</p> -->
+		<!-- <p class="tag-line">Software Engineering Manager</p> -->
+        <h4>Software Engineering Manager</h4>
+		<p class="resume-contact">
+          <a href="mailto:jdsandoval@gmail.com">jdsandoval@gmail.com</a> &bull;
+          <a href="tel:+1234567890">+52 3314105486</a> &bull;
+          <span>Guadalajara, México</span>
+        </p>
+      </div>
+    </header>
 
-								<div class="item">
-									<div class="item-heading row align-items-center mb-2">
-										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Software Engineer</h4>
-										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">Coca-Cola – 2004 - 2007</div>
-										
-									</div>
-									<div class="item-content">
-										<ul>
-											<li>Develop and support modules for in-house ERP system using VB, SQL server, C# and .NET Framework technologies in general.</li>
-											</ul>
-									</div>
-								</div><!--//item-->								
-								
-							</section><!--//work-section-->
+    <!-- Summary Section -->
+    <section aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Summary</h2>
+      <p>
+        Professional with experience on SW Dev, QA, DevOps, User Support and Project Management. Currently playing the role of Software Engineering manager but still in touch with technology and solutions, providing coaching, business context and System Design advice to Jr and Sr engineers from different backgrounds and cultures, along with User and Project management. I am currently looking for a challenging position in an innovative organization where I can use my technical and analytical skills to change the world one step at a time.
+      </p>
+    </section>
 
-							
-						</div><!--//resume-main-->
-						<aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
-									<section class="education-section py-3">
-										<h3 class="text-uppercase resume-section-heading mb-4">Education</h3>
-										<ul class="list-unstyled resume-education-list">
-											<li class="mb-3">
-												<div class="resume-degree font-weight-bold">MS in Business Analytics</div>
-												<div class="resume-degree-org text-muted">Universidad Autónoma de Guadalajara</div>
-												<div class="resume-degree-time text-muted">2022 - 2024</div>
-											</li>
-											<li class="mb-3">
-												<div class="resume-degree font-weight-bold">MSc in Computer Science</div>
-												<div class="resume-degree-org text-muted">Universidad Autónoma de Guadalajara</div>
-												<div class="resume-degree-time text-muted">2013 - 2015</div>
-											</li>
-											<li class="mb-3">
-												<div class="resume-degree font-weight-bold">BSc(Ed) in Math Education</div>
-												<div class="resume-degree-org text-muted">Universidad de Colima</div>
-												<div class="resume-degree-time text-muted">2000 - 2005</div>
-											</li>											
-											<li class="mb-3">
-												<div class="resume-degree font-weight-bold">BSc in Computer Systems</div>
-												<div class="resume-degree-org text-muted">Instituto Tecnológico de Colima</div>
-												<div class="resume-degree-time text-muted">1998 - 2003</div>
-											</li>											
-										</ul>
-									</section><!--//education-section-->
-									<section class="education-section py-3">
-										<h3 class="text-uppercase resume-section-heading mb-4">Certifications</h3>
-										<ul class="list-unstyled resume-awards-list">
-											<li class="mb-3">
-												<div class="font-weight-bold">Project Management Institute</div>
-												<div class="text-muted">Project Management Professional (2015)</div>
-											</li>
-											<li>
-												<div class="font-weight-bold">Scrum.org</div>
-												<div class="text-muted">Professional Scrum Product Owner - PSPO I (2021)</div>
-											</li>
-										</ul>
-									</section><!--//education-section-->
-									<section class="skills-section py-3">
-										<h3 class="text-uppercase resume-section-heading mb-4">Languages</h3>
-										<ul class="list-unstyled resume-lang-list">
-											<li class="mb-2">English <span class="text-muted">(Professional)</span></li>
-											<li>Spanish <span class="text-muted">(Native)</span></li>
-										</ul>
-									</section><!--//certificates-section-->
-									<section class="skills-section py-3">
-										<h3 class="text-uppercase resume-section-heading mb-4">Interests</h3>
-										<ul class="list-unstyled resume-interests-list mb-0">
-											<li class="mb-2">Technology</li>
-											<li class="mb-2">Programming</li>
-											<li class="mb-2">AI</li>
-											<li class="mb-2">DevOps and QA</li>
-											<li class="mb-2">Project Management</li>
-											<li class="mb-2">Sports</li>
-											<li class="mb-2">Travelling</li>
-											<li class="mb-2">Photography</li>
-											<li>Cooking</li>
-											<li>Music (Expert playlist maker &#128512;)</li>
-										</ul>
-									</section><!--//certificates-section-->
-									
-								</aside><!--//resume-aside-->
-							</div><!--//row-->
-						</div><!--//resume-body-->
-						<hr>
-						<div class="resume-footer text-center">
-							<ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
-								<li class="list-inline-item mb-lg-0 me-3"><a class="resume-link" href="https://github.com/dnlsandoval" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github-square fa-2x me-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">dnlsandoval</span></a></li>
-								<li class="list-inline-item mb-lg-0 me-3"><a class="resume-link" href="https://www.linkedin.com/in/dnlsandoval/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-2x me-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">dnlsandoval</span></a></li>
-							</ul>
-						</div><!--//resume-footer-->
-					</article>
-					
-				</div><!--//container-->
-				
-				<footer class="footer text-center py-4">
-					<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-					<small class="copyright text-muted">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-				</footer>
-				
-			</div><!--//main-wrapper-->
-			
+    <!-- Skills Section -->
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul class="skills-list">
+        <li>
+          <!-- Office SVG Icon -->
+          <span class="icon" aria-label="Microsoft Office">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#ea3e23"/><text x="12" y="17" font-size="10" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold">O</text></svg>
+          </span>
+          Microsoft Office Suite
+        </li>
+        <li>
+          <!-- Adobe SVG Icon -->
+          <span class="icon" aria-label="Adobe Suite">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#ff0000"/><text x="12" y="17" font-size="10" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold">A</text></svg>
+          </span>
+          Adobe Creative Suite
+        </li>
+        <li>
+          <!-- Figma SVG Icon -->
+          <span class="icon" aria-label="Figma">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="6" r="4" fill="#0acf83"/>
+              <circle cx="12" cy="12" r="4" fill="#a259ff"/>
+              <circle cx="12" cy="18" r="4" fill="#f24e1e"/>
+              <circle cx="18" cy="12" r="4" fill="#ff7262"/>
+              <circle cx="6" cy="12" r="4" fill="#1abcfe"/>
+            </svg>
+          </span>
+          Figma
+        </li>
+        <li>
+          <!-- Web SVG Icon -->
+          <span class="icon" aria-label="Web Development">
+            <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" fill="#1976d2"/>
+              <text x="12" y="17" font-size="10" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="bold">&lt;/&gt;</text>
+            </svg>
+          </span>
+          HTML5, CSS3, JavaScript, React, Git
+        </li>
+      </ul>
+    </section>
 
+    <!-- Experience Section -->
+    <section aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experience</h2>
+      <article>
+        <h3>Front-End Developer</h3>
+        <p class="resume-meta">Acme Corp &mdash; 2021&ndash;Present</p>
+        <ul>
+          <li>Developed and maintained responsive web applications using React and TypeScript. Developed and maintained responsive web applications using React and TypeScript. Developed and maintained responsive web applications using React and TypeScript.</li>
+          <li>Collaborated with designers to implement accessible, pixel-perfect UIs.</li>
+          <li>Optimized performance and SEO for high-traffic pages.</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Web Designer</h3>
+        <p class="resume-meta">Creative Studio &mdash; 2019&ndash;2021</p>
+        <ul>
+          <li>Designed and prototyped user interfaces in Figma and Adobe XD.</li>
+          <li>Worked closely with developers to ensure design fidelity.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Education Section -->
+    <section aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <article>
+        <h3>MBA in Business Analytics</h3>
+        <p class="resume-meta">Universidad Autónoma de Guadalajara &mdash; 2022&ndash;2024</p>
+      </article>
+      <article>
+        <h3>M.Sc. in Computer Science</h3>
+        <p class="resume-meta">Universidad Autónoma de Guadalajara &mdash; 2013&ndash;2015</p>
+      </article>
+      <article>
+        <h3>B.Sc.(Ed) in Math Education</h3>
+        <p class="resume-meta">Universidad de Colima &mdash; 2000&ndash;2005</p>
+      </article>
+      <article>
+        <h3>B.Sc. in Computer Systems</h3>
+        <p class="resume-meta">Instituto Tecnológico de Colima &mdash; 1998&ndash;2003</p>
+      </article>	  
+    </section>
+
+    <section aria-labelledby="certifications-heading">
+      <h2 id="certifications-heading">Certifications</h2>
+      <article>
+        <h3>Project Management Professional</h3>
+        <p class="resume-meta">Project Management Institute &mdash; 2015</p>
+      </article>
+      <article>
+        <h3>Professional Scrum Product Owner &ndash;PSPO I</h3>
+        <p class="resume-meta">Scrum.org &mdash; 2021</p>
+      </article>
+      </section>
+  </main>
+
+  <!-- JavaScript for Dark Mode Toggle -->
+  <script>
+    // Dark mode toggle logic
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.getElementById('theme-toggle');
+      // Set initial state based on localStorage or system preference
+      if (localStorage.getItem('theme') === 'dark' ||
+          (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.body.classList.add('dark-mode');
+        toggle.checked = true;
+      }
+      toggle.addEventListener('change', function() {
+        document.body.classList.toggle('dark-mode', toggle.checked);
+        localStorage.setItem('theme', toggle.checked ? 'dark' : 'light');
+      });
+    });
+  </script>
 </body>
-</html> 
-
+</html>
