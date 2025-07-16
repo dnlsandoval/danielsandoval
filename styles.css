@@ -202,6 +202,40 @@ body.dark-mode .skills-list li {
   margin-bottom: 0.5em;
 }
 
+/* Resume grid layout */
+.resume-grid {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 40px;
+}
+
+.resume-main {
+  min-width: 0;
+}
+
+.resume-sidebar {
+  min-width: 0;
+  padding-left: 16px;
+  border-left: 1px solid #e0e0e0;
+}
+
+body.dark-mode .resume-sidebar {
+  border-left: 1px solid #333;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 900px) {
+  .resume-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .resume-sidebar {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 32px;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
   .resume {
