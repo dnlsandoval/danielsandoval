@@ -202,6 +202,104 @@ body.dark-mode .skills-list li {
   margin-bottom: 0.5em;
 }
 
+/* Compact Experience Section */
+section[aria-labelledby="experience-heading"] {
+  font-size: 0.97em;
+  line-height: 1.35;
+  margin-bottom: 0;
+}
+
+section[aria-labelledby="experience-heading"] h2 {
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+  margin-top: 1em;
+}
+
+section[aria-labelledby="experience-heading"] h3 {
+  font-size: 1em;
+  margin-bottom: 0.1em;
+  margin-top: 0.7em;
+}
+
+section[aria-labelledby="experience-heading"] .resume-meta {
+  font-size: 0.93em;
+  color: #666;
+  margin-bottom: 0.1em;
+  margin-top: 0;
+}
+
+section[aria-labelledby="experience-heading"] article {
+  margin-bottom: 0.7em;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+section[aria-labelledby="experience-heading"] ul {
+  margin: 0 0 0.5em 1.1em;
+  padding: 0;
+}
+
+section[aria-labelledby="experience-heading"] li {
+  margin-bottom: 0.2em;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  section[aria-labelledby="experience-heading"] {
+    font-size: 0.95em;
+  }
+  section[aria-labelledby="experience-heading"] ul {
+    margin-left: 0.7em;
+  }
+}
+
+/* Compact Summary Section */
+section[aria-labelledby="summary-heading"] {
+  font-size: 0.97em;
+  line-height: 1.35;
+  margin-bottom: 0.7em;
+  margin-top: 0.7em;
+}
+section[aria-labelledby="summary-heading"] h2 {
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+  margin-top: 0.7em;
+}
+section[aria-labelledby="summary-heading"] p {
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+
+/* Compact Skills Section */
+section[aria-labelledby="skills-heading"] {
+  font-size: 0.97em;
+  line-height: 1.35;
+  margin-bottom: 0.7em;
+  margin-top: 0.7em;
+}
+section[aria-labelledby="skills-heading"] h2 {
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+  margin-top: 0.7em;
+}
+section[aria-labelledby="skills-heading"] ul.skills-list {
+  margin: 0 0 0.5em 1.1em;
+  padding: 0;
+}
+section[aria-labelledby="skills-heading"] li {
+  margin-bottom: 0.2em;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+section[aria-labelledby="skills-heading"] .icon {
+  margin-right: 0.5em;
+  display: inline-flex;
+  align-items: center;
+  min-width: 24px;
+}
+
 /* Resume grid layout */
 .resume-grid {
   display: grid;
