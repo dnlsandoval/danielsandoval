@@ -1,47 +1,31 @@
-<a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devresume-free-bootstrap-5-resume-cv-template-for-developers/" target="_blank"><img src="https://themes.3rdwavemedia.com/wp-content/uploads/2019/04/Bootstrap-Resume-CV-Template-DevResume-Promo-1.png" alt="DevResume - Bootstrap 5 Resume/CV Template for Developers" /></a>
+# Daniel Sandoval Resume
 
-## Theme Details & Demo
+This repository contains the source code for Daniel Sandoval's professional resume website. The site is designed to showcase experience, skills, and education in a clean, accessible, and responsive format.
 
-**Demo:** https://themes.3rdwavemedia.com/demo/bs5/devresume/
+## Purpose
 
-DevResume is a **free Bootstrap 5 resume/CV template** I made for software developers. Built on **Bootstrap 5 and SASS**, it's quick and easy to change the template styling. This template is designed to help you **build your personal brand and attract better clients**!
+The purpose of this repository is to provide an online, interactive, and easily updatable resume for Daniel Sandoval. It demonstrates professional experience, technical skills, and project management capabilities.
 
-## Author & License
+## Technologies Used
 
-This Bootstrap template is made by UX/UI designer [Xiaoying Riley](https://twitter.com/3rdwave_themes) for developers and is 100% FREE as long as you **keep the footer attribution link**. You do not have the rights to resell, sublicense or redistribute (even for free) the template on its own or as a separate attachment from any of your work.
+- **HTML5** and **CSS3** for structure and styling
+- **SVG** for custom icons
+- **Font Awesome** for social and document icons
+- **Google Fonts** for typography
+- **JavaScript** for dark mode toggle and interactivity
 
+## License
 
-If you'd like to **use the template without the attribution link**, you can [buy the **commercial license** via the theme website](https://themes.3rdwavemedia.com/bootstrap-templates/resume/devresume-free-bootstrap-5-resume-cv-template-for-developers/)
+This project is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
 
+You are free to:
 
-#### Follow Xiaoying
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material
 
-[Twitter](https://twitter.com/3rdwave_themes)
+**Under the following terms:**
 
-[Facebook](https://www.facebook.com/3rdwavethemes/)
+- **Attribution** — You must give appropriate credit.
+- **NonCommercial** — You may not use the material for commercial purposes.
 
-[Dribbble](https://dribbble.com/Xiaoying)
-
-[Medium](https://medium.com/@3rdwave_themes)
-
-[Linkedin](https://uk.linkedin.com/in/xiaoying)
-
-
-## Latest Version
-**Bootstrap 5 v3.1** - 2024-09-15
-
-[Changelog](https://themes.3rdwavemedia.com/bootstrap-templates/resume/devresume-free-bootstrap-5-resume-cv-template-for-developers/?target=changelog)
-
-
-## Features
-
--  Fully Responsive
--  HTML5 + CSS3
--  Built on Bootstrap 5
--  **SCSS** source files included
--  FontAwesome icons
--  Compatible with all modern browsers
-
-## Credits
-- [Bootstrap](http://getbootstrap.com/)
-- [FontAwesome](http://fortawesome.github.io/Font-Awesome/)
+See the [LICENSE](https://creativecommons.org/licenses/by-nc/4.0/) for
