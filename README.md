@@ -28,4 +28,4 @@ You are free to:
 - **Attribution** — You must give appropriate credit.
 - **NonCommercial** — You may not use the material for commercial purposes.
 
-See the [LICENSE](https://creativecommons.org/licenses/by-nc/4.0/) for
+See the [LICENSE](https://creativecommons.org/licenses/by-nc/4.0/) for full license terms
