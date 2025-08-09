@@ -99,6 +99,24 @@ body.dark-mode .resume-contact a {
   color: #90caf9;
 }
 
+/* Improve link readability in dark mode */
+body.dark-mode a {
+  color: #66b3ff;           /* Brighter blue for contrast */
+  text-decoration: underline;
+}
+
+body.dark-mode a:visited {
+  color: #a3d8ff;           /* Lighter blue for visited links */
+}
+
+body.dark-mode a:hover,
+body.dark-mode a:focus {
+  color: #fff;              /* White on hover/focus for max contrast */
+  background: #1976d2;      /* Optional: add a blue highlight background */
+  border-radius: 3px;
+  outline: none;
+}
+
 /* Section Headings */
 .resume h1 {
   font-size: 2rem;
