@@ -440,3 +440,100 @@ a:focus, button:focus, input:focus, .switch:focus-within {
   outline: 2px solid #1976d2;
   outline-offset: 2px;
 }
+
+/* Print / PDF */
+@page {
+  size: letter;
+  margin: 0.5in;
+}
+
+@media print {
+  body, body.dark-mode {
+    background: #fff;
+    color: #222;
+  }
+  .switch-container,
+  a[href$=".pdf"] {
+    display: none;
+  }
+  .resume, body.dark-mode .resume {
+    background: #fff;
+    color: #222;
+    box-shadow: none;
+    border-radius: 0;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  /* Printable width is below the 900px breakpoint, so restore two columns */
+  .resume-grid {
+    grid-template-columns: 2.2fr 1fr;
+    gap: 24px;
+  }
+  .resume-sidebar, body.dark-mode .resume-sidebar {
+    border-left: 1px solid #e0e0e0;
+    padding-left: 12px;
+    margin-top: 0;
+  }
+  .resume h1, .resume h3, .resume h4,
+  body.dark-mode .resume h1, body.dark-mode .resume h3, body.dark-mode .resume h4 {
+    color: #222;
+  }
+  .resume h2, body.dark-mode .resume h2 {
+    color: #1976d2;
+  }
+  body.dark-mode a, body.dark-mode .resume-contact a {
+    color: #1976d2;
+    text-decoration: none;
+    background: none;
+  }
+  .resume-meta, body.dark-mode .resume-meta,
+  .resume-contact, body.dark-mode .resume-contact {
+    color: #555;
+  }
+  .skills-list li, body.dark-mode .skills-list li {
+    background: #f0f4f8;
+    color: #222;
+    box-shadow: none;
+  }
+  .resume-header {
+    margin-bottom: 8px;
+  }
+  .profile-img, .profile-img img {
+    width: 72px;
+    height: 72px;
+  }
+  section[aria-labelledby="skills-heading"] ul.skills-list {
+    gap: 4px 8px;
+    margin-left: 0;
+  }
+  section[aria-labelledby="skills-heading"] li {
+    margin: 0;
+  }
+  .resume-sidebar h2 {
+    font-size: 1.1em;
+    margin-top: 0.8em;
+  }
+  .resume-sidebar h3, .resume-sidebar h4 {
+    font-size: 1em;
+  }
+  .resume-sidebar .resume-meta {
+    font-size: 0.95em;
+    margin: 0 0 0.4em 0;
+  }
+  .resume-meta {
+    break-after: avoid;
+  }
+  li {
+    break-inside: avoid;
+  }
+  h2, h3 {
+    break-after: avoid;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

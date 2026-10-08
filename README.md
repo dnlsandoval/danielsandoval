@@ -14,6 +14,15 @@ The purpose of this repository is to provide an online, interactive, and easily 
 - **Google Fonts** for typography
 - **JavaScript** for dark mode toggle and interactivity
 
+## Regenerating the PDF
+
+`assets/DanielSandoval.pdf` is printed from `index.html` (layout comes from the `@media print` rules in `styles.css`). After editing the HTML, run from the repo root:
+
+```sh
+google-chrome --headless --no-pdf-header-footer --virtual-time-budget=5000 \
+  --print-to-pdf="$PWD/assets/DanielSandoval.pdf" "file://$PWD/index.html"
+```
+
 ## License
 
 This project is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
